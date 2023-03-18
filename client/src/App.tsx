@@ -1,24 +1,17 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/home';
-import Confession from './components/confession';
-import Misdemeanour from './components/misdemeanour';
-import NotFound from './components/not_found';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './components/router/router';
 
 function App() {
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/confession" element={<Confession />} />
-        <Route path="/misdemeanour" element={<Misdemeanour />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </>
   );
-
 }
 
 export default App
