@@ -1,10 +1,8 @@
-import { useState } from 'react'
-import './App.css'
-import { BrowserRouter } from 'react-router-dom';
-import { Router } from './components/router/router';
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import { Router } from "./components/router/router";
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
@@ -14,4 +12,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
